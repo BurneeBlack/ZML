@@ -369,14 +369,19 @@ class FileStream
     /*
         Wrapper for Outputing the RawLump itself.
     */
-    void RawLumpOut(str_format sf = null, bool withrl = true)
+    void RawLumpOut(str_format sf = null, bool withrl = true, bool place = true)
     {
         if (sf)
         {
             if(withrl)
                 console.printf(sf.FormatOut());
             else
-                console.printf(string.Format("%s%s"), sf.FormatOut(), RawLump);
+            {
+                if (place)
+                    console.printf(string.Format("%s%s", sf.FormatOut(), RawLump));
+                else
+                    console.printf(string.Format("%s%s", RawLump, sf.FormatOut()));
+            }
         }
         else
             console.printf(RawLump);
