@@ -368,6 +368,9 @@ class FileStream
 
     /*
         Wrapper for Outputing the RawLump itself.
+
+        The str_format class comes from the ZSFU extension.
+
     */
     void RawLumpOut(str_format sf = null, bool withrl = true, bool place = true)
     {
