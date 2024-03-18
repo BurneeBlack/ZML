@@ -1,0 +1,18 @@
+/*
+
+    What: Z-xtensible Markup Language Parser MAPINFO
+    Who: Sarah Blackburn
+    When: 05/02/22
+
+*/
+
+gameinfo
+{
+	AddEventHandlers = "ZMLHandler"
+}
+
+DoomEdNums
+{
+    24240 = ZMLWeed
+	24241 = ZMLSeed
+}
